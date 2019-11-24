@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <script src="script/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css"/>
+    <script src="script/jquery.fancybox.min.js"></script>
+    <title>Motociklistički pneumatici | Mitas</title>
+    <script src="script/test.js" async></script>
+    <link rel="shortcut icon" href="img/mitasfavicon.jpg" type="image/x-icon">
+</head>
+
+<body>
+
+    <div class="container">
+        <header id="header">
+
+            <div id="flexcontainerlogo">
+            <a href="index.html"><img id="logo" src="img/logo.png"/></a>
+            </div>
+
+            <div id="flexcontainermreze">
+            <a href="https://www.facebook.com/MitasAgri/"><img id="fb" src="img/fb.png"/></a>
+            <a href="https://www.youtube.com/channel/UCMvzntSBIA_QWu675mCU5Kg"><img id="yt" src="img/yt.png"/></a>
+            <a href="https://www.instagram.com/mitascycling/?hl=sr"><img id="ig" src="img/ig.png"/></a>
+            </div>
+        </header>
+                <nav class="navarea">
+
+                        <ul>
+                                <li><a href="index.html">Početna</a></li>
+                                <li class="dropdown"><a href="#" >O nama +</a>
+                                    <ul class="submenu">
+                                        <li><a href="o_nama.html">Činjenice o marki Mitas</a></li>
+                                        <li><a href="zasto.html">Zašto nam verujete</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown"><a href="#" >Proizvodi +</a> 
+                                    <ul class="submenu">
+                                        <li><a href="poljoprivredni.html">Poljoprivredni pneumatici</a></li>
+                                        <li><a href="industrijski.html">Industrijski pneumatici</a></li>
+                                        <li><a href="motociklisticki.html">Motociklistički pneumatici</a></li>
+                                        <li><a href="biciklisticki.html">Biciklistički pneumatici</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="kontakt.html">Kontakt</a></li>
+                        </ul>
+            
+            
+            
+                </nav>
+            
+        <div class="jedanbic">
+            <h1>Motociklistički pneumatici</h1>
+            <p id="poslednjip">
+                    Motociklistima nudimo visokokvalitetne pneumatike za dvotočkaše koji im omogućavaju uživanje u vrhunskim moto 
+                    avanturama. Osim novih radijalnih moto pneumatika Sport Force, Mitas nudi i široki asortiman pneumatika, kao 
+                    što su pneumatici za skutere, terenske motocikle, kros, enduro i trkačke motocikle. Ponosni smo na činjenicu da 
+                    motociklističke pneumatike Mitas preporučuju brojni šampioni motociklizma iz različitih disciplina.
+            </p>
+        </div>
+        <div class="galerija">
+
+            <div>
+                <a data-fancybox="gallery" href="img/moto1.jpg" data-caption="MC 35 S-RACER 2.0"><img src="img/moto1.jpg" class="slikePneumatika"></a>
+                <a data-fancybox="gallery" href="img/moto2.jpg" data-caption="B13"><img src="img/moto2.jpg" class="slikePneumatika"></a>
+                <a data-fancybox="gallery" href="img/moto3.jpg" data-caption="MC 22 ELEGANCE"><img src="img/moto3.jpg" class="slikePneumatika"></a>
+            </div>
+
+            <div>
+                <a data-fancybox="gallery" href="img/moto4.jpg" data-caption="FT-18"><img src="img/moto4.jpg" class="slikePneumatika"></a>
+                <a data-fancybox="gallery" href="img/moto5.jpg" data-caption="ET-01"><img src="img/moto5.jpg" class="slikePneumatika"></a>
+                <a data-fancybox="gallery" href="img/moto6.jpg" data-caption="E-13"><img src="img/moto6.jpg" class="slikePneumatika"></a>
+            </div>
+        </div>
+        
+
+
+        <footer id="footer">
+            <p id="prvip"><span id="datetime"></span></p>
+            <script>
+                var dt = new Date();
+                document.getElementById("datetime").innerHTML = (("0"+dt.getDate()).slice(-2)) +"."+ (("0"+(dt.getMonth()+1)).slice(-2)) +"."+ (dt.getFullYear()) +" "+ (("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2));
+            </script>
+            <p>
+                Mitas, član Trelleborg grupe, je značajna evropska marka guma za poljoprivredne, građevinske i industrijske 
+                mašine, motocikle, bicikle i druge posebne segmente.
+            </p>
+            <p id="poslednjip"> Copiright 2019 Trelleborg Wheel Systems Serbia d.o.o.</p>
+        </footer>
+    </div>
+
+
+</body>

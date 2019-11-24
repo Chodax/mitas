@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <script src="script/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css"/>
+    <script src="script/jquery.fancybox.min.js"></script>
+    <title>Mitas</title>
+    <script src="script/test.js" async></script>
+    <link rel="shortcut icon" href="img/mitasfavicon.jpg" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <header id="header">
+
+            <div id="flexcontainerlogo">
+            <a href="index.html"><img id="logo" src="img/logo.png"/></a>
+            </div>
+
+            <div id="flexcontainermreze">
+            <a href="https://www.facebook.com/MitasAgri/"><img id="fb" src="img/fb.png"/></a>
+            <a href="https://www.youtube.com/channel/UCMvzntSBIA_QWu675mCU5Kg"><img id="yt" src="img/yt.png"/></a>
+            <a href="https://www.instagram.com/mitascycling/?hl=sr"><img id="ig" src="img/ig.png"/></a>
+            </div>
+        </header>
+        <nav class="navarea">
+
+            <ul>
+                    <li><a href="index.html">Početna</a></li>
+                    <li class="dropdown"><a href="#" >O nama +</a>
+                        <ul class="submenu">
+                            <li><a href="o_nama.html">Činjenice o marki Mitas</a></li>
+                            <li><a href="zasto.html">Zašto nam verujete</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a href="#" >Proizvodi +</a> 
+                        <ul class="submenu">
+                            <li><a href="poljoprivredni.html">Poljoprivredni pneumatici</a></li>
+                            <li><a href="industrijski.html">Industrijski pneumatici</a></li>
+                            <li><a href="motociklisticki.html">Motociklistički pneumatici</a></li>
+                            <li><a href="biciklisticki.html">Biciklistički pneumatici</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+
+
+
+    </nav>
+
+
+
+        <div class="jedanindex">
+           
+        <div class="slideshow-container">
+
+            
+            <div class="mySlides fade">
+                <img src="img/traktor.jpg" style="width:100%">
+            </div>
+        
+            <div class="mySlides fade">
+                <img src="img/bager.jpg" style="width:100%">
+            </div>
+        
+            <div class="mySlides fade">
+                <img src="img/motor.jpg" style="width:100%">
+            </div>
+        
+            <div class="mySlides fade">
+                <img src="img/bicikl.jpg" style="width:100%">
+            </div>
+
+           
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+      
+        
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            
+            function plusSlides(n) {
+            showSlides(slideIndex += n);
+            }
+
+            
+            function currentSlide(n) {
+            showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+            }
+        </script>
+            <p>
+                Na veb stranicama Mitas Tyres ćete naći širok asortiman pneumatika kompanije Mitas. U sekciji <a href="poljoprivredni.html">
+                poljoprivredni pneumatici</a> se nalaze traktorski pneumatici, pneumatici za kombajne, poljoprivredne 
+                priključke, višenamenske gume i široki asortiman drugih <span id="tacke">...</span>
+            </p>
+            <span id="vise"> 
+            <p>
+                U delu za <a href="industrijski.html">zemljane radove i industriju</a> nudimo pneumatike za bagere, valjke i grejdere, 
+                dizalice, viljuškare, pneumatike za bočno upravljanje, pneumatike za višenamenske mašine te pneumatike za 
+                zahtevne zemljane radove.
+            </p>
+            <p>
+                Pod brendom Mitas se dalje proizvode pneumatici za <a href="motociklisticki.html">motocikle</a>, 
+                <a href="biciklisticki.html">bicikle</a>, avione, kamione i tabače snega.
+            </p>
+            <p>
+                Fabrike pneumatika Mitas nalaze se u Pragu, Zlinu i Otrokovicama, takođe u Srbiji, Sloveniji  i SAD,
+                u Čarls Sitiju, država Ajova. Pneumatici  se u celom svetu prodaju posredstvom prodajnih i  distributivnih mreža.
+            </p>
+            <p id="poslednjip">
+                Više o brendu Mitas ćete pronaći na stranici <a href="o_nama.html">O nama</a>. U slučaju da želite da nas 
+                kontaktirate, to možete učiniti na stranici <a href="kontakt.html">Kontakt</a>, gde možete da pronađete potrebne informacije.
+            </p>
+
+        </span>
+        <button onclick="moreLess()" id="dugmePrikaz">PRIKAŽI VIŠE >></button>
+
+        </div>
+        <footer id="footer">
+            <p id="prvip"><span id="datetime"></span></p>
+            <script>
+                var dt = new Date();
+                document.getElementById("datetime").innerHTML = (("0"+dt.getDate()).slice(-2)) +"."+ (("0"+(dt.getMonth()+1)).slice(-2)) +"."+ (dt.getFullYear()) +" "+ (("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2));
+            </script>
+            <p>
+                Mitas, član Trelleborg grupe, je značajna evropska marka guma za poljoprivredne, građevinske i industrijske 
+                mašine, motocikle, bicikle i druge posebne segmente.
+            </p>
+            <p id="poslednjip"> Copiright 2019 Trelleborg Wheel Systems Serbia d.o.o.</p>
+        </footer>
+    </div>
+
+
+</body>

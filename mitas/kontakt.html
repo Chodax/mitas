@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="shortcut icon" href="img/mitasfavicon.jpg" type="image/x-icon">
+    <title>Kontakt | Mitas</title>
+    <script src="script/test.js" async></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <header id="header">
+
+            <div id="flexcontainerlogo">
+            <a href="index.html"><img id="logo" src="img/logo.png"/></a>
+            </div>
+
+            <div id="flexcontainermreze">
+            <a href="https://www.facebook.com/MitasAgri/"><img id="fb" src="img/fb.png"/></a>
+            <a href="https://www.youtube.com/channel/UCMvzntSBIA_QWu675mCU5Kg"><img id="yt" src="img/yt.png"/></a>
+            <a href="https://www.instagram.com/mitascycling/?hl=sr"><img id="ig" src="img/ig.png"/></a>
+            </div>
+        </header>
+
+       
+        <nav class="navarea">
+
+                <ul>
+                        <li><a href="index.html">Početna</a></li>
+                        <li class="dropdown"><a href="#" >O nama +</a>
+                            <ul class="submenu">
+                                <li><a href="o_nama.html">Činjenice o marki Mitas</a></li>
+                                <li><a href="zasto.html">Zašto nam verujete</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a href="#" >Proizvodi +</a> 
+                            <ul class="submenu">
+                                <li><a href="poljoprivredni.html">Poljoprivredni pneumatici</a></li>
+                                <li><a href="industrijski.html">Industrijski pneumatici</a></li>
+                                <li><a href="motociklisticki.html">Motociklistički pneumatici</a></li>
+                                <li><a href="biciklisticki.html">Biciklistički pneumatici</a></li>
+                            </ul>
+                            </li>
+                            
+                        
+                        <li><a href="kontakt.html">Kontakt</a></li>
+                    </ul>
+
+
+
+        </nav>
+
+
+
+
+        <h1 id="jedanh1">KONTAKT I LOKACIJA</h1>
+        <div class="jedankontakt" id="jedank">
+            
+            <div id="flexcontainerkontakt">
+            
+            <p>Trelleborg Wheel Systems Serbia d.o.o.</p>
+            <p>Industrijska bb, 22400 Ruma</p>
+            <p>Republika Srbija</p>
+            <p>Area Sales Manager: Radmila Ciric</p>
+            <p>Tel: +381 22 400 065</p>
+            <p>Fax: +381 22 474 544</p>
+            <p><a href = "mailto: radmila.ciric@mitas-tyres.com">radmila.ciric@mitas-tyres.com</a></p>
+            <p id="poslednjip"><a href = "mailto: info-rs@mitas-tyres.com">info-rs@mitas-tyres.com</a></p>
+        </div>
+            <div id="flexboxcontainermapa">
+                    <div class="mapouter"><div class="gmap_canvas"><iframe width="700" height="300" id="gmap_canvas" 
+                        src="https://maps.google.com/maps?q=%D0%98%D0%BD%D0%B4%D1%83%D1%81%D1%82%D1%80%D0%B8%D1%98%D1%81%D0%BA%D0%B0%20bb%2C%20%D0%A0%D1%83%D0%BC%D0%B0%2022400&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                         frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.whatismyip-address.com">how do you get your ip address</a></div>
+                        </div>
+            </div>
+        </div>
+        <div class="dva">
+            <h1>IMATE LI PITANJA?</h1> 
+            <div id="flexcontainer">
+            <div id="flexcontainerslika">
+            <img src="img/pismo.png" alt="">
+            </div>
+
+            <form name="Forma" onsubmit="return formasubmit(this)" method="POST" onreset="formareset()">
+                  <div id="flexcontainertext">   
+               <input type="text" name="text1" class="textF" placeholder="Ime"><br>
+                <span id="errorIme"></span> <br>
+                <input type="text" name="text2" class="textF" placeholder="Prezime"><br>
+                <span id="errorPrezime"></span> <br>
+                <input type="email" name="mail1" class="textF" placeholder="E-mail"><br>
+                <span id="errorMail"></span>  <br>
+                <input type="text" name="phone1" class="textF" placeholder="Telefon"><br>
+                <span id="errorPhone"></span> <br>
+                <textarea name="textA1" id="ta1" cols="30" rows="10" placeholder="Vaše pitanje..."></textarea> <br>
+                <span id="errorPoruka"></span> 
+                 </div>
+
+                <div id="flexcontainerpotvrda">
+                <input type="submit" name="submit" value="Pošalji" id="submit1" > <br> <input type="reset" id="reset1" value="Poništi">
+                </div>
+                <br>
+            </div>
+            
+            </form>
+        </div>
+            <br>
+        </div>
+
+
+
+        <footer id="footer">
+            <p id="prvip"><span id="datetime"></span></p>
+            <script>
+                var dt = new Date();
+                document.getElementById("datetime").innerHTML = (("0"+dt.getDate()).slice(-2)) +"."+ (("0"+(dt.getMonth()+1)).slice(-2)) +"."+ (dt.getFullYear()) +" "+ (("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2));
+            </script>
+            <p>
+                Mitas, član Trelleborg grupe, je značajna evropska marka guma za poljoprivredne, građevinske i industrijske 
+                mašine, motocikle, bicikle i druge posebne segmente.
+            </p>
+            <p id="poslednjip"> Copiright 2019 Trelleborg Wheel Systems Serbia d.o.o.</p>
+        </footer>
+    </div>
+
+
+</body>

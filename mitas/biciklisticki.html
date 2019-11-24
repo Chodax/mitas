@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <script src="script/jquery-3.4.1.min.js" async></script>
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css"/>
+    <script src="script/jquery.fancybox.min.js" async></script>
+    <title>Biciklistički pneumatici | Mitas</title>
+    <script src="script/test.js" async></script>
+    <link rel="shortcut icon" href="img/mitasfavicon.jpg" type="image/x-icon">
+</head>
+    
+<body>
+
+    <div class="container">
+        <header id="header">
+
+            <div id="flexcontainerlogo">
+            <a href="index.html"><img id="logo" src="img/logo.png"/></a>
+            </div>
+
+            <div id="flexcontainermreze">
+            <a href="https://www.facebook.com/MitasAgri/"><img id="fb" src="img/fb.png"/></a>
+            <a href="https://www.youtube.com/channel/UCMvzntSBIA_QWu675mCU5Kg"><img id="yt" src="img/yt.png"/></a>
+            <a href="https://www.instagram.com/mitascycling/?hl=sr"><img id="ig" src="img/ig.png"/></a>
+            </div>
+        </header>
+                <nav class="navarea">
+
+                        <ul>
+                                <li><a href="index.html">Početna</a></li>
+                                <li class="dropdown"><a href="#" >O nama +</a>
+                                    <ul class="submenu">
+                                        <li><a href="o_nama.html">Činjenice o marki Mitas</a></li>
+                                        <li><a href="zasto.html">Zašto nam verujete</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown"><a href="#" >Proizvodi +</a> 
+                                    <ul class="submenu">
+                                        <li><a href="poljoprivredni.html">Poljoprivredni pneumatici</a></li>
+                                        <li><a href="industrijski.html">Industrijski pneumatici</a></li>
+                                        <li><a href="motociklisticki.html">Motociklistički pneumatici</a></li>
+                                        <li><a href="biciklisticki.html">Biciklistički pneumatici</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="kontakt.html">Kontakt</a></li>
+                        </ul>
+            
+            
+            
+                </nav>
+            
+        <div class="jedanbic">
+            <h1>Biciklistički pneumatici</h1>
+            <p id="poslednjip">
+                    Naše iskustvo sa velo gumama i cevima datira još od davne 1929. godine. Zahvaljujući ogromnom asortimanu
+                    Mitas proizvoda, ljubitelji svih kategorija i disciplina mogu pronaći ono što traže. Naš brend ima rešenje
+                    za svakog biciklistu. Sve gume i cevi kompanije Mitas proizvedene su po najvišim standardima kvaliteta
+                    ekskluzivno u našoj fabrici u Češkoj.
+            </p>
+        </div>
+
+        <div class="galerija">
+
+            <div class="galerijared">
+                <a data-fancybox="gallery" href="img/bike1.jpg" data-caption="DOM R03 - BMX"><img src="img/bike11.jpg" class="slikePneumatika"></a>
+                <a data-fancybox="gallery" href="img/bike2.jpg" data-caption="Zirra F V94 - BMX"><img src="img/bike22.jpg" class="slikePneumatika"></a>
+                <a data-fancybox="gallery" href="img/bike3.jpg" data-caption="Cobra V58 - City Trek"><img src="img/bike33.jpg" class="slikePneumatika"></a>
+            </div>
+
+            <div class="galerijared">
+                <a data-fancybox="gallery" href="img/bike4.jpg" data-caption="Gripper V84 - City Trek"><img src="img/bike44.jpg" class="slikePneumatika"></a>
+                <a data-fancybox="gallery" href="img/bike5.jpg" data-caption="Sepia V71 - City Trek"><img src="img/bike55.jpg" class="slikePneumatika"></a>
+                <a data-fancybox="gallery" href="img/bike6.jpg" data-caption="Winner V45 - Cross Gravel"><img src="img/bike66.jpg" class="slikePneumatika"></a>
+            </div>
+
+           
+        </div>
+ 
+ 
+
+        <footer id="footer">
+            <p id="prvip"><span id="datetime"></span></p>
+            <script>
+                var dt = new Date();
+                document.getElementById("datetime").innerHTML = (("0"+dt.getDate()).slice(-2)) +"."+ (("0"+(dt.getMonth()+1)).slice(-2)) +"."+ (dt.getFullYear()) +" "+ (("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2));
+            </script>
+            <p>
+                Mitas, član Trelleborg grupe, je značajna evropska marka guma za poljoprivredne, građevinske i industrijske 
+                mašine, motocikle, bicikle i druge posebne segmente.
+            </p>
+            <p id="poslednjip"> Copiright 2019 Trelleborg Wheel Systems Serbia d.o.o.</p>
+        </footer>
+    </div>
+
+
+</body>
